@@ -1,7 +1,12 @@
 <h1>Listing invoices</h1>
 
-<table id=invoices_list></table>
-<div id=invoices_pager></div>
+<table id="invoices_list"></table>
+<div id="invoices_pager"></div>
+
+<br/>
+<table id="invoices_list_detail"></table>
+
+<div id="invoices_pager_detail"></div>
 
 <script>
   function myFormatter ( cellvalue, options, rowObject ) {
@@ -11,6 +16,9 @@
 
 <% content_for :head do %>
   <%= raw(invoices_jqgrid) %>
+
+  <%= raw(invoices_jqgrid_detail) %>
+
 <% end %>
 
 <br />

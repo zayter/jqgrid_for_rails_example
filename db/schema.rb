@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101227230631) do
+ActiveRecord::Schema.define(:version => 20150411165231) do
+
+  create_table "invoice_details", :force => true do |t|
+    t.integer  "invid"
+    t.datetime "invdate"
+    t.float    "amount"
+    t.float    "tax"
+    t.float    "total"
+    t.string   "note"
+  end
 
   create_table "invoices", :force => true do |t|
     t.integer  "invid"

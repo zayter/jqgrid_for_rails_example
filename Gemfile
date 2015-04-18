@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~> 3.2'
-
+gem "jquery-ui-rails"
+gem "json" ,'1.8.2'
+gem "chef"
+gem "chef-zero"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 gem 'jqgrid_for_rails', git: 'git://github.com/Juanmcuello/jqgrid_for_rails.git'
 gem 'will_paginate'
 
@@ -22,6 +25,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'pry'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
